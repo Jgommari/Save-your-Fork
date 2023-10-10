@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Case Problem 1
+   
+   Save your Fork Layout Styles
+
+   Filename: sf_layout.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgb(61, 226, 226);
+   font-size: 12px;
+   font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+   background-color: rgb(231, 231, 231);
+   margin: 0px auto;
+   width: 90%;
+   max-width: 1100px;
+   min-width: 720px;
+}
+
+/* Body Header Navigation Styles */
+
+body > header {
+   background-color: white;
+   height: 300px;
+   margin-bottom: 30px;
+   position: relative;
+}
+
+body > header > nav.toplinks {
+   float: right;
+   margin: 10px;
+   width: 40%;
+}
+
+body > header > nav.toplinks li {
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   font-size: 0.9em;
+   float: left;
+   letter-spacing: 0.1em;
+   margin-top: 50px;
+   width: 33.3%;
+   text-align: center;
+}
+
+nav.toplinks li a:visited, nav.toplinks li a:link {
+   color: rgb(151, 151, 151);
+}
+
+nav.toplinks li a:active, nav.toplinks li a:hover {
+   color: rgb(20, 167, 170);
+}
+
+body > header nav.tabs {
+   position: absolute;
+   bottom: 0px;
+   height: 220px;
+   width: 100%;
+}
+
+body > header nav.tabs::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+body > header > nav.tabs > ul {
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
